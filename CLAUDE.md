@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Mintlify-based documentation site for **Mulligan**, an AI-powered automation platform for insurance brokerages. The documentation covers features including automated quoting, policy comparison, commission tracking, and submission management.
+This is a Mintlify-based documentation site for **InsureStack**, an AI-powered automation platform for insurance brokerages. The documentation covers features including automated quoting, policy comparison, commission tracking, and submission management.
 
 ### Project Context
 - **Format**: MDX files with YAML frontmatter
@@ -80,7 +80,7 @@ The documentation follows a hierarchical folder structure:
 ```
 
 ### Key Content Files
-- **DOCS.md**: Comprehensive user guide for the Mulligan platform (1000+ lines)
+- **DOCS.md**: Comprehensive user guide for the InsureStack platform (1000+ lines)
   - Covers all platform features, workflows, and best practices
   - Detailed sections on submissions, quoting, policy comparison, commissions, team management, and billing
   - Extensive credit system and subscription plan documentation
@@ -147,15 +147,14 @@ To add a new page:
 ## Brand and Theme
 
 ### Visual Identity
-- Logo files: `/logo/light.svg` and `/logo/dark.svg`
-- Favicon: `/favicon.svg`
-- Hero images: `/images/hero-light.png` and `/images/hero-dark.png`
+- Logo file: `/logo/insurestack-logo-only.svg` (used for both light and dark themes)
+- Favicon: `/favicon.ico`
 
 ### Color Scheme
 Defined in `docs.json`:
-- Primary: #16A34A (green)
-- Light: #07C983 (bright green)
-- Dark: #15803D (dark green)
+- Primary: #0066C1 (blue)
+- Light: #0096EE (bright blue)
+- Dark: #005098 (dark blue)
 
 ## Troubleshooting
 

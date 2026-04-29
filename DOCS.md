@@ -1,6 +1,6 @@
-# Mulligan Platform User Guide
+# InsureStack Platform User Guide
 
-Welcome to **Mulligan** - your unified AI automation platform for insurance brokerages. This guide will help you navigate the platform and maximize its capabilities.
+Welcome to **InsureStack** - your unified AI automation platform for insurance brokerages. This guide will help you navigate the platform and maximize its capabilities.
 
 ---
 
@@ -24,13 +24,13 @@ Welcome to **Mulligan** - your unified AI automation platform for insurance brok
 
 ## Introduction
 
-### What is Mulligan?
+### What is InsureStack?
 
-Mulligan is an AI-powered automation platform designed specifically for insurance brokerages. It streamlines your insurance operations by automating complex tasks across quoting, policy analysis, commission management, and submission workflows.
+InsureStack is an AI-powered automation platform designed specifically for insurance brokerages. It streamlines your insurance operations by automating complex tasks across quoting, policy analysis, commission management, and submission workflows.
 
-### Who is Mulligan for?
+### Who is InsureStack for?
 
-Mulligan is built for:
+InsureStack is built for:
 - **Insurance brokers** seeking to automate repetitive tasks like quote requests and policy analysis
 - **Brokerage teams** looking to improve efficiency and accuracy across quoting, submissions, and commission tracking
 - **Operations managers** wanting visibility into team activities, credit usage, and team performance
@@ -58,15 +58,15 @@ Mulligan is built for:
 
 ## Getting Started
 
-### Accessing Mulligan
+### Accessing InsureStack
 
-Mulligan is a fully hosted, cloud-based platform. Access it at: **[app.usemulligan.com](https://app.usemulligan.com)**
+InsureStack is a fully hosted, cloud-based platform. Access it at: **[app.insurestack.ai](https://app.insurestack.ai)**
 
 All features, data storage, and processing happen in the cloud - no installation or downloads required.
 
 ### Sign Up or Login
 
-When you visit **app.usemulligan.com**, you'll see two options:
+When you visit **app.insurestack.ai**, you'll see two options:
 
 #### **Sign Up** (New Users)
 If you're creating a new account:
@@ -74,7 +74,7 @@ If you're creating a new account:
 2. Enter your email and create a password
 3. **Choose your organization name**:
    - Enter a custom organization name (e.g., "Smith Insurance Agency")
-   - OR select **"Personal Account"** if you plan on using Mulligan individually
+   - OR select **"Personal Account"** if you plan on using InsureStack individually
 4. Complete your profile
 5. You're now logged in with your own organization
 
@@ -86,7 +86,7 @@ If you already have an account:
 
 ### Understanding Organizations
 
-Mulligan uses an **organization-based structure**:
+InsureStack uses an **organization-based structure**:
 
 - **Every user belongs to one organization**
 - **Each organization has its own subscription plan and billing**
@@ -119,7 +119,7 @@ Mulligan uses an **organization-based structure**:
 
 ### First Login Experience
 
-When you first log into Mulligan, you'll see a **Welcome Modal** that asks you to:
+When you first log into InsureStack, you'll see a **Welcome Modal** that asks you to:
 
 1. **Choose your organization name**: Enter your company/brokerage name, or select "This is a personal account" if using solo
 2. **Learn about your free credits**: You'll start with 10 free credits each month to try the platform. This will always be the case regardless of which plan you are on
@@ -155,7 +155,7 @@ The **Dashboard** is your command center and landing page after login. It provid
 
 At the top of the dashboard, you'll also see:
 - **Plan name**: Displays which plan your org is currently on
-- **Credit balance indicator**: Shows your remaining credits. You can always clcik on the refresh icon to get the latest amount. To learn how credits work in Mulligan go to the Credit System & Billing section.
+- **Credit balance indicator**: Shows your remaining credits. You can always clcik on the refresh icon to get the latest amount. To learn how credits work in InsureStack go to the Credit System & Billing section.
 - **Purchase button**: The Buy Addititonal Credits and Upgrade Now section will take you to billing page where you can purchase additional credits or change your subscription.
 
 ### Quick Action Cards
@@ -268,7 +268,7 @@ The submissions list shows:
 
 ### What is Quoting?
 
-The **Quoting** module automates insurance quote generation by directly interacting with carrier websites and filling in the information provided by the user. Instead of manually filling out forms on each carrier's site, Mulligan does it for you.
+The **Quoting** module automates insurance quote generation by directly interacting with carrier websites and filling in the information provided by the user. Instead of manually filling out forms on each carrier's site, InsureStack does it for you.
 
 ### How to Generate Quotes
 
@@ -362,7 +362,7 @@ Once a policy is uploaded:
 
 ### Policy Comparison & Analysis Tools
 
-Once you have policies uploaded, Mulligan provides powerful tools to compare and analyze them. Access these features from the **Insurance Comparison** page at the top of the policy interface.
+Once you have policies uploaded, InsureStack provides powerful tools to compare and analyze them. Access these features from the **Insurance Comparison** page at the top of the policy interface.
 
 #### Available Tools:
 
@@ -630,9 +630,9 @@ Control what team members can access:
 
 ## Credit System & Billing
 
-### How Pricing Works in Mulligan
+### How Pricing Works in InsureStack
 
-Mulligan operates on a **credit-based system**. Every action you take (quotes, submissions, proposals, policy checks, or commissions) costs **a certain amount of credits**.
+InsureStack operates on a **credit-based system**. Every action you take (quotes, submissions, proposals, policy checks, or commissions) costs **a certain amount of credits**.
 
 #### Core Principles:
 
@@ -644,7 +644,7 @@ Mulligan operates on a **credit-based system**. Every action you take (quotes, s
 
 ### Credit Types and How They Work
 
-Mulligan has **three types of credits**, each with different rules:
+InsureStack has **three types of credits**, each with different rules:
 
 #### 1. **Monthly Free Credits** (10 credits/month)
 - **Who gets them**: Everyone, on every plan (including Free, Plus, Pro, Team, and Enterprise)
@@ -677,12 +677,12 @@ Mulligan has **three types of credits**, each with different rules:
 - **Survival**: Remain available if you upgrade, downgrade or cancel your subscription
 
 **Example: Credit Usage Order**
-If you're on the Plus plan and have purchased 50 extra credits, Mulligan uses credits in this order:
+If you're on the Plus plan and have purchased 50 extra credits, InsureStack uses credits in this order:
 1. First: Your 10 free monthly credits
 2. Second: Your 30 Plus plan credits
 3. Third: Your 50 purchased credits (valid for 1 year)
 
-**Mulligan** uses **Metronome** for usage based tracking and credits are utilized based on priority attached. The order of usage is Monthly Free Credits, Monthly Plan Credits, and lastly Purchased Credits. This is automaitcally done by the system and the user will not have to manually choose which credits to utilize.
+**InsureStack** uses **Metronome** for usage based tracking and credits are utilized based on priority attached. The order of usage is Monthly Free Credits, Monthly Plan Credits, and lastly Purchased Credits. This is automaitcally done by the system and the user will not have to manually choose which credits to utilize.
 
 ### When Are Credits Consumed?
 
@@ -706,7 +706,7 @@ For detailed credit information:
 
 ### Subscription Plans
 
-Mulligan offers tiered plans with different monthly credit allocations:
+InsureStack offers tiered plans with different monthly credit allocations:
 
 | Plan | Monthly Credits | Price | Team Members | Best For |
 |------|----------------|-------|--------------|----------|
@@ -878,9 +878,9 @@ To upgrade or downgrade:
 
 ### Payment Methods
 
-Mulligan uses **Stripe** for secure payment processing:
+InsureStack uses **Stripe** for secure payment processing:
 - All payment data is handled by Stripe
-- Mulligan never stores your full card details
+- InsureStack never stores your full card details
 - You can add multiple payment methods
 - If you have multiple payment methods then you can choose a default payment method or it will be set automatically for you
 
@@ -957,8 +957,8 @@ If you need help:
 
 ### General
 
-**Q: Can I use Mulligan on mobile devices?**
-A: Mulligan is optimized for desktop browsers. Mobile support is limited but functional. We plan on expanding it soon.
+**Q: Can I use InsureStack on mobile devices?**
+A: InsureStack is optimized for desktop browsers. Mobile support is limited but functional. We plan on expanding it soon.
 
 **Q: Is my data secure?**
 A: Yes. All data is encrypted in transit and at rest. Integration credentials are encrypted separately.
@@ -980,7 +980,7 @@ A: We accept all major credit cards via Stripe. ACH and wire transfers are avail
 ### Features
 
 **Q: How many carriers do you support?**
-A: Mulligan currently integrates with 30+ carriers across Commercial Auto, BOP (Business Owners' Policy), WC (Workers' Compensation), GL (General Liability), Trucking, Professional Liability with more added regularly. If you are an Enterprise client, you also get a say in which carriers you did like us to build next.
+A: InsureStack currently integrates with 30+ carriers across Commercial Auto, BOP (Business Owners' Policy), WC (Workers' Compensation), GL (General Liability), Trucking, Professional Liability with more added regularly. If you are an Enterprise client, you also get a say in which carriers you did like us to build next.
 
 **Q: What is the maximum number of policies we can compare side by side?**
 A: There is no current limit on the number of policies that a user can compare side by side. However, we do recommend that a user compares no more than 4 policies at a time for best user experience.
@@ -992,7 +992,7 @@ A: Policies: PDF. Commissions: PDF, Excel, CSV. Submissions: Various document fo
 
 ## Conclusion
 
-Mulligan is designed to save you time and reduce errors in your insurance operations. By automating quoting, policy analysis, commission tracking, and submissions, you can focus on what matters most: serving your clients.
+InsureStack is designed to save you time and reduce errors in your insurance operations. By automating quoting, policy analysis, commission tracking, and submissions, you can focus on what matters most: serving your clients.
 
 **Next Steps:**
 1. Complete your integrations setup
@@ -1004,4 +1004,4 @@ For additional help, click **Support** in the sidebar or contact our team direct
 
 ---
 
-**Welcome to Mulligan. Let's automate your insurance workflows.**
+**Welcome to InsureStack. Let's automate your insurance workflows.**

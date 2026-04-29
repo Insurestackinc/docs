@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mulligan",
+  "name": "InsureStack",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0066C1",
+    "light": "#0096EE",
+    "dark": "#005098"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -79,32 +79,32 @@
       "anchors": [
         {
           "anchor": "App",
-          "href": "https://app.usemulligan.com",
+          "href": "https://app.insurestack.ai",
           "icon": "rocket"
         },
         {
           "anchor": "Support",
-          "href": "mailto:support@usemulligan.com",
+          "href": "mailto:support@insurestack.ai",
           "icon": "life-ring"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
+    "light": "/logo/insurestack-logo-only.svg",
+    "dark": "/logo/insurestack-logo-only.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Login",
-        "href": "https://app.usemulligan.com"
+        "href": "https://app.insurestack.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Get Started",
-      "href": "https://app.usemulligan.com"
+      "href": "https://app.insurestack.ai"
     }
   },
   "contextual": {
@@ -121,7 +121,7 @@
   },
   "footer": {
     "socials": {
-      "website": "https://usemulligan.com"
+      "website": "https://insurestack.ai"
     }
   }
 }
