@@ -1,0 +1,354 @@
+---
+title: "Troubleshooting"
+description: "Common issues and solutions"
+---
+
+## Quote Issues
+
+<AccordionGroup>
+  <Accordion icon="circle-xmark" title="Quote not completing">
+    **Symptoms:** Quote stuck in "Running" status for 30+ minutes
+
+    **Possible causes:**
+    - Complex risk requiring extensive form filling
+    - Carrier website slowness
+    - Additional information required by carrier
+    - Technical error
+
+    **Solutions:**
+    1. Check the Dashboard's Recent Activity for status updates
+    2. Wait up to 1 hour for complex quotes
+    3. If still running after 1 hour, contact support with the quote ID
+    4. Review your uploaded documents for completeness
+  </Accordion>
+
+  <Accordion icon="ban" title="Quote declined - what does this mean?">
+    **Symptoms:** Quote shows "Declined" status
+
+    **Common reasons:**
+    - Risk outside carrier's appetite
+    - Missing required information
+    - Loss history exceeds thresholds
+    - Business type not covered by this carrier
+
+    **Solutions:**
+    1. Review the decline reason provided
+    2. Address any missing information issues
+    3. Try a different carrier that covers this risk type
+    4. Adjust coverage requirements if possible
+    5. Contact the carrier directly for appetite clarification
+  </Accordion>
+
+  <Accordion icon="triangle-exclamation" title="Quote failed - technical error">
+    **Symptoms:** Quote shows "Failed" status
+
+    **Possible causes:**
+    - Carrier website changes (they update forms regularly)
+    - Missing critical form fields in your upload
+    - Connectivity issues
+    - Incompatible document format
+
+    **Solutions:**
+    1. Review your uploaded documents for completeness
+    2. Ensure all required fields are included
+    3. Retry the quote with the same information
+    4. If failures persist, contact support with the quote ID
+    5. Try uploading a different document format (e.g., native PDF instead of scan)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Policy Upload Issues
+
+<AccordionGroup>
+  <Accordion icon="file-excel" title="Policy upload failed">
+    **Symptoms:** Policy shows error during upload
+
+    **Possible causes:**
+    - Non-PDF file format
+    - Corrupted or password-protected file
+    - File size too large (rare)
+    - Low-quality scan
+
+    **Solutions:**
+    1. Ensure the file is in PDF format (not Word, Excel, or image files)
+    2. Remove password protection from the PDF
+    3. If scanned, use high-quality scans (300 DPI or higher)
+    4. Try re-exporting the PDF from the source
+    5. Split very large policies (500+ pages) into smaller files
+  </Accordion>
+
+  <Accordion icon="magnifying-glass" title="Policy extraction incomplete">
+    **Symptoms:** AI doesn't extract all expected information
+
+    **Possible causes:**
+    - Incomplete policy uploaded (missing pages)
+    - Low-quality scan or image-based PDF
+    - Non-standard policy format
+    - Data in tables or charts rather than text
+
+    **Solutions:**
+    1. Verify you uploaded ALL pages including endorsements
+    2. Use native digital PDFs when possible (not scanned)
+    3. Check that critical information is text-based, not images
+    4. Re-upload with a higher-quality document
+    5. Use Policy Chat to ask specific questions if extraction is partial
+  </Accordion>
+
+  <Accordion icon="comments" title="Policy Chat not working">
+    **Symptoms:** Cannot access chat or chat returns no results
+
+    **Possible issue:**
+    Policy Chat is unavailable for combined policy types
+
+    **Solution:**
+    1. Check if your policy is marked as "Combined" type
+    2. If yes, re-upload the policy and select the specific policy type (Auto, GL, etc.) instead of Combined
+    3. Process the policy again
+    4. Policy Chat should now be available
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Commission Statement Issues
+
+<AccordionGroup>
+  <Accordion icon="file-invoice" title="Commission statement not extracting correctly">
+    **Symptoms:** Missing data or incorrect extraction
+
+    **Possible causes:**
+    - Low-quality scan or image
+    - Non-standard format from carrier
+    - Corrupted or password-protected file
+    - Data in images/charts rather than text
+
+    **Solutions:**
+    1. Ensure the file isn't password-protected
+    2. If scanned, use high-quality scans (300 DPI or higher)
+    3. Try exporting the statement in a different format (Excel instead of PDF or vice versa)
+    4. Contact support if issues persist - we may need to add support for this carrier's format
+  </Accordion>
+
+  <Accordion icon="dollar-sign" title="Commission amounts don't match expectations">
+    **Symptoms:** Extracted amounts differ from what you expected
+
+    **Possible causes:**
+    - Commission rate changed
+    - Premium adjustment or endorsement
+    - Carrier fee or deduction applied
+    - Cancellation or refund processed
+
+    **Solutions:**
+    1. Check the "Transaction Type" field for adjustments/cancellations
+    2. Look for fee deductions in the extracted data
+    3. Compare extracted data to the original statement manually
+    4. Contact the carrier if discrepancies can't be explained
+    5. Export to Excel to analyze all line items
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Credit & Billing Issues
+
+<AccordionGroup>
+  <Accordion icon="coins" title="Credit balance not updating">
+    **Symptoms:** Balance seems stale or incorrect
+
+    **Solutions:**
+    1. Wait a few seconds - balance updates automatically every 10-15 seconds
+    2. Click the **"Refresh"** button on the UsageTrackingBar
+    3. Navigate to Settings → Billing and click "Refresh" on Balance Display
+    4. If still incorrect after refresh, contact support with your Organization ID
+  </Accordion>
+
+  <Accordion icon="credit-card" title="Payment failed">
+    **Symptoms:** Received failed payment notification
+
+    **Possible causes:**
+    - Insufficient funds
+    - Expired card
+    - Bank declined the charge
+    - Incorrect billing ZIP code
+
+    **Solutions:**
+    1. Verify your card has sufficient funds
+    2. Check card expiration date in Settings → Billing
+    3. Update billing ZIP code if it changed
+    4. Try a different payment method
+    5. Contact your bank if they're blocking the charge
+    6. Mulligan will automatically retry after 3, 7, and 14 days
+  </Accordion>
+
+  <Accordion icon="ban" title="Action buttons disabled">
+    **Symptoms:** Cannot create quotes, upload policies, etc.
+
+    **Cause:** Out of credits
+
+    **Solutions:**
+    1. Check your credit balance on the UsageTrackingBar
+    2. **Option 1:** Purchase additional credits ($1 each) at Settings → Billing
+    3. **Option 2:** Upgrade your plan for more monthly credits
+    4. **Option 3:** Wait for monthly credits to reset at the start of your billing period
+
+    [Learn more about purchasing credits](/billing/purchasing)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Team & Access Issues
+
+<AccordionGroup>
+  <Accordion icon="envelope" title="Team member didn't receive invitation">
+    **Symptoms:** Invited user says they didn't get the email
+
+    **Solutions:**
+    1. Check their spam/junk folder
+    2. Verify you entered the correct email address
+    3. Wait up to 15 minutes for email delivery
+    4. Resend the invitation from Permissions page
+  </Accordion>
+
+  <Accordion icon="lock" title="Team member can't access a module">
+    **Symptoms:** Module is missing from their sidebar
+
+    **Cause:** Insufficient permissions
+
+    **Solution:**
+    1. Navigate to **Permissions** from the sidebar
+    2. Select the team member
+    3. Grant them access to the module they need
+    4. Save changes
+    5. Have them refresh their browser
+
+    [Learn more about permissions](/team/permissions)
+  </Accordion>
+
+  <Accordion icon="users" title="Cannot invite team members">
+    **Cause:** Not on Team or Enterprise plan
+
+    **Solution:**
+    Team member invitations require Team Plan ($999/month) or Enterprise.
+
+    Free, Plus, and Pro plans are single-user only.
+
+    [Upgrade to Team Plan](/billing/plans#team-plan---999month)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Login & Account Issues
+
+<AccordionGroup>
+  <Accordion icon="key" title="Forgot password">
+    **Solution:**
+    1. Go to [app.usemulligan.com](https://app.usemulligan.com)
+    2. Click **"Forgot Password"**
+    3. Enter your email address
+    4. Check your email for password reset link
+    5. Click the link and set a new password
+    6. Login with your new password
+  </Accordion>
+
+  <Accordion icon="envelope" title="Changed email, can't login">
+    **Cause:** Using old email address
+
+    **Solution:**
+    Use your **new email address** to login. After changing your email in Account Settings, your old email no longer works.
+
+    If you forgot your new email, contact support.
+  </Accordion>
+
+  <Accordion icon="circle-exclamation" title="Account suspended">
+    **Possible causes:**
+    - Multiple failed payment attempts
+    - Terms of service violation
+
+    **Solution:**
+    1. Check your email for notifications from Mulligan
+    2. Update payment method if it was a billing issue
+    3. Contact support immediately to resolve the suspension
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Still Need Help?
+
+If these solutions don't resolve your issue:
+
+<Steps>
+<Step title="Gather information">
+  - Screenshot of the error (if applicable)
+  - Steps to reproduce the issue
+  - Your Organization ID (from Settings → Organization)
+  - Specific feature affected (quote, policy upload, etc.)
+</Step>
+
+<Step title="Contact Support">
+  Navigate to **Support** from the sidebar and submit a ticket with:
+  - Description of the issue
+  - Steps to reproduce
+  - Screenshots
+  - Your Organization ID
+</Step>
+
+<Step title="Expect a response">
+  Our support team typically responds within:
+  - **Community (Pay as you Go):** 48-72 hours
+  - **Email (Plus/Pro):** 24 hours
+  - **Priority (Team):** 12 hours
+  - **Dedicated (Enterprise):** 4 hours or per SLA
+</Step>
+</Steps>
+
+<Card
+  title="Contact Support"
+  icon="life-ring"
+  href="mailto:support@pyqai.com"
+  horizontal
+>
+  Email us at support@pyqai.com for personalized assistance
+</Card>
+
+---
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Best Practices"
+    icon="lightbulb"
+    href="/support/best-practices"
+  >
+    Tips for avoiding common issues
+  </Card>
+
+  <Card
+    title="General FAQs"
+    icon="circle-question"
+    href="/support/faq"
+  >
+    Answers to frequently asked questions
+  </Card>
+
+  <Card
+    title="Billing FAQ"
+    icon="credit-card"
+    href="/billing/faq"
+  >
+    Billing-specific questions
+  </Card>
+
+  <Card
+    title="Features"
+    icon="sparkles"
+    href="/features/submissions"
+  >
+    Learn about platform features
+  </Card>
+</CardGroup>

@@ -1,0 +1,264 @@
+---
+title: "Billing FAQ"
+description: "Frequently asked questions about credits, plans, and billing"
+---
+
+## General Billing Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Do unused credits roll over?">
+    **Monthly credits (free + plan):** No. They expire at the end of each billing period.
+
+    **Purchased credits:** Yes. They roll over month-to-month for 1 year from purchase.
+
+    [Learn more about credit types](/billing/credit-types)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I cancel anytime?">
+    Yes. You can cancel your subscription at any time from Settings → Billing. You'll retain access until the end of your current billing period.
+
+    [Learn more about cancellations](/billing/plan-changes#cancellations)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What payment methods do you accept?">
+    - **Credit/debit cards** - Visa, Mastercard, American Express, Discover
+    - **ACH and wire transfers** - Enterprise plans only
+
+    All payments are securely processed through Stripe.
+
+    [Learn more about payment methods](/settings/payment-methods)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I get a refund if a quote fails or is declined?">
+    No. Credits are consumed when a process reaches an end state: 'succeeded', 'failed', or 'declined'.
+
+    Failed and declined are end states that signify either the quote was declined by the carrier or there was missing information. We do not charge if the process is terminated midway without reaching an end state, even though we incur backend processing costs.
+
+    We only charge when a process is completed to an end state.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="How do I know how many credits each action costs?">
+    Click the UsageTrackingBar at the top of any page to expand it and see per-module credit costs for your current plan.
+
+    Costs vary based on:
+    - Feature complexity
+    - Processing time
+    - Data volume
+    - Carrier requirements
+  </Accordion>
+</AccordionGroup>
+
+## Credit Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Do credit costs vary by plan?">
+    Currently, credit costs per action are the same across all plans. The difference is how many credits you get each month.
+
+    Higher plans provide better value through larger monthly allocations rather than discounted per-action costs.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What happens to purchased credits if I cancel my subscription?">
+    They remain in your account and are still usable for 1 year from purchase. You'll have access to them even on the free Pay as you Go plan.
+
+    [Learn more about purchased credits](/billing/credit-types#3-purchased-credits)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I buy credits for someone else's organization?">
+    No. Credits are tied to the organization and can only be purchased by someone with billing access in that organization.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I buy credits in bulk?">
+    Yes. There's no limit to how many purchased credits you can buy at once. They're all valid for 1 year from the purchase date.
+
+    [Learn how to purchase credits](/billing/purchasing)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Why was I charged for a declined quote?">
+    Declined quotes consume credits because the system completed the full process of filling out carrier forms and receiving a decline response. This is an end state.
+
+    The decline typically means the risk is outside the carrier's appetite or missing information was provided - not a system error.
+  </Accordion>
+</AccordionGroup>
+
+## Plan Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="What if I upgrade mid-month?">
+    You immediately receive the full monthly allocation for your new plan. Your billing cycle resets to start from the upgrade date.
+
+    Any purchased credits are transferred, but previous monthly credits are forfeited.
+
+    [Learn more about upgrades](/billing/plan-changes#upgrades)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What if I run out of credits mid-month?">
+    You have two options:
+    1. **Purchase additional credits** - $1 each, valid for 1 year
+    2. **Upgrade your plan** - Get more monthly credits immediately
+
+    [Learn more about purchasing](/billing/purchasing)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I switch between plans multiple times?">
+    Yes, but:
+    - **Upgrades** take effect immediately (you pay immediately)
+    - **Downgrades** take effect at period end (you pay through current period)
+
+    Frequent upgrades/downgrades aren't cost-effective.
+
+    [Learn more about plan changes](/billing/plan-changes)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="How does billing work for the Team Plan?">
+    Team Plan is **$999/month flat rate** regardless of how many team members you have.
+
+    - Unlimited team members
+    - 2,010 monthly credits shared across the entire team
+    - One organization pays, all members have access
+
+    [Learn more about Team Plan](/billing/plans#team-plan---999month)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="How many credits does Enterprise get?">
+    Enterprise customers get a tailor-made package depending on their needs and usage requirements.
+
+    Enterprise plans typically offer **unlimited credits**, along with custom pricing, dedicated support, and additional features tailored to your organization's workflow.
+
+    [Contact us about Enterprise](/billing/plans#enterprise-plan---custom-pricing)
+  </Accordion>
+</AccordionGroup>
+
+## Team & Multi-User Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Do team members need their own subscriptions?">
+    No. Team members do NOT pay separately. They're covered under your organization's subscription.
+
+    You pay one flat rate for the Team Plan ($999/month) regardless of how many members you have.
+
+    [Learn more about inviting team members](/team/invite-members)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I track which team member used which credits?">
+    No. Credits are organization-level, not assigned to individual users. You cannot track which team member consumed which credits.
+
+    All team members draw from the shared organization credit pool.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What plans allow team members?">
+    - **Pay as you Go, Plus, Pro:** Single-user only (cannot invite team members)
+    - **Team:** Unlimited team members
+    - **Enterprise:** Unlimited team members
+
+    [View plan comparison](/billing/plans#feature-comparison)
+  </Accordion>
+</AccordionGroup>
+
+## Integrations & API Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Which plans include integrations?">
+    Only **Enterprise plans** include custom integrations and API access.
+
+    Lower plans (Pay as you Go, Plus, Pro, Team) do not have access to integrations or the API.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="How much does API access cost?">
+    API access is included with Enterprise plans only. Contact us for custom Enterprise pricing based on your needs.
+
+    [Contact us about Enterprise](mailto:support@usemulligan.com)
+  </Accordion>
+</AccordionGroup>
+
+## Technical Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="How is usage tracked?">
+    Mulligan uses **Metronome** for usage-based tracking. Credits are automatically utilized based on priority:
+
+    1. Monthly Free Credits (10)
+    2. Monthly Plan Credits (30/350/2,000)
+    3. Purchased Credits (valid 1 year)
+
+    You don't need to manually choose which credits to use.
+
+    [Learn more about billing overview](/billing/overview)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="When exactly are credits deducted?">
+    Credits are deducted **only when a run reaches a final state** of:
+    - **Succeeded** - Task completed successfully
+    - **Failed** - Task encountered an error
+    - **Declined** - Carrier declined the request
+
+    If a process is terminated mid-way (before reaching an end state), **no credits are consumed**.
+
+    [Learn more about when credits are consumed](/billing/overview#when-are-credits-consumed)
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Why doesn't my credit balance update immediately?">
+    The UsageTrackingBar updates every few seconds. If it seems stale, click the **"Refresh"** button on the bar or in Balance Display on the Billing page to get real-time counts.
+  </Accordion>
+</AccordionGroup>
+
+## Billing Cycle & Timing
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="When do credits reset?">
+    **Monthly credits** (free + plan) reset at the start of your billing period.
+
+    Your billing period starts on the day you subscribed (or upgraded). For example:
+    - If you subscribed on the 15th, credits reset on the 15th of every month
+    - If you upgraded on the 20th, your new cycle starts on the 20th
+
+    **Purchased credits** don't reset - they're valid for 1 year from purchase.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I change my billing date?">
+    Not directly. Your billing date is set when you subscribe or upgrade.
+
+    If you want a different billing date, you'd need to cancel and re-subscribe on your desired date (not recommended due to potential disruption).
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Do I get prorated refunds if I downgrade?">
+    No. Downgrades take effect at the end of your billing period, so you get the full value of what you paid for. No refunds or prorations are issued.
+
+    [Learn more about downgrades](/billing/plan-changes#downgrades-cancellations)
+  </Accordion>
+</AccordionGroup>
+
+## Still Have Questions?
+
+<CardGroup cols={2}>
+  <Card
+    title="View Plans"
+    icon="list"
+    href="/billing/plans"
+  >
+    Compare subscription plans and features
+  </Card>
+
+  <Card
+    title="Credit Types"
+    icon="layer-group"
+    href="/billing/credit-types"
+  >
+    Understand the 3 types of credits
+  </Card>
+
+  <Card
+    title="Contact Support"
+    icon="life-ring"
+    href="/support/faq"
+  >
+    Submit a support ticket
+  </Card>
+
+  <Card
+    title="Best Practices"
+    icon="lightbulb"
+    href="/support/best-practices"
+  >
+    Tips for managing credits wisely
+  </Card>
+</CardGroup>

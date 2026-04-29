@@ -1,0 +1,222 @@
+---
+title: "Permissions"
+description: "Control what team members can access and manage"
+---
+
+<Note>
+  **Team Plan Required:** Permission management is only available on **Team and Enterprise plans**.
+</Note>
+
+## Overview
+
+Control what team members can access and do within your Mulligan organization. Grant or revoke permissions for each module to ensure team members only have access to what they need.
+
+## How to Manage Permissions
+
+<Steps>
+<Step title="Navigate to Permissions">
+  From the sidebar, click **"Permissions"** (bottom section).
+</Step>
+
+<Step title="Select a team member">
+  Click on the team member whose permissions you want to manage.
+</Step>
+
+<Step title="Grant or revoke permissions">
+  Toggle permissions for each module:
+  - **Submissions** - Create and manage submission documents
+  - **Quoting** - Generate quotes from carriers
+  - **Policies** - Upload and compare policies
+  - **Commissions** - Process commission statements
+  - **Integrations** - Access integration features (Enterprise only)
+  - **Invite Members** - Send invitations to new team members
+</Step>
+
+<Step title="Save changes">
+  Click **"Save"** to apply the permission changes. Changes take effect immediately.
+</Step>
+</Steps>
+
+## Permission Levels
+
+Mulligan uses a simple permission model:
+
+- **Full access** - Can use the module and view all organization data
+- **No access** - Cannot see or use the module (sidebar item hidden)
+
+<Note>
+  There are currently no "view-only" or "edit-only" permissions. Access is all-or-nothing per module.
+</Note>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion icon="shield" title="Follow least privilege principle">
+    Grant only the permissions each team member needs to do their job. Don't give everyone full access to everything.
+  </Accordion>
+
+  <Accordion icon="users-gear" title="Define roles">
+    Create standard permission sets for common roles:
+    - **Producer** - Submissions, Quoting, Policies
+    - **Accountant** - Commissions only
+    - **Operations Manager** - All features
+    - **Admin Assistant** - Submissions, Policies
+  </Accordion>
+
+  <Accordion icon="calendar-check" title="Review permissions regularly">
+    Periodically review team member permissions (quarterly or when roles change) to ensure they're still appropriate.
+  </Accordion>
+
+  <Accordion icon="user-lock" title="Restrict sensitive modules">
+    Be especially careful with:
+    - **Commissions** (financial data)
+    - **Invite Members** (security risk)
+    - **Integrations** (system access)
+  </Accordion>
+
+  <Accordion icon="clipboard-list" title="Document permission assignments">
+    Keep a record of which roles should have which permissions for consistency when onboarding new team members.
+  </Accordion>
+</AccordionGroup>
+
+## Common Permission Scenarios
+
+### Scenario 1: New Producer
+**Role:** Account Executive who quotes and binds coverage
+
+**Recommended permissions:**
+- ✅ Submissions
+- ✅ Quoting
+- ✅ Policies
+- ❌ Commissions
+- ❌ Integrations
+- ❌ Invite Members
+
+### Scenario 2: Accountant
+**Role:** Reconciles commission statements
+
+**Recommended permissions:**
+- ❌ Submissions
+- ❌ Quoting
+- ❌ Policies
+- ✅ Commissions
+- ❌ Integrations
+- ❌ Invite Members
+
+### Scenario 3: Operations Manager
+**Role:** Oversees all agency operations
+
+**Recommended permissions:**
+- ✅ Submissions
+- ✅ Quoting
+- ✅ Policies
+- ✅ Commissions
+- ✅ Integrations (if Enterprise)
+- ✅ Invite Members
+
+### Scenario 4: Admin Assistant
+**Role:** Supports producers with submissions and policy organization
+
+**Recommended permissions:**
+- ✅ Submissions
+- ❌ Quoting
+- ✅ Policies
+- ❌ Commissions
+- ❌ Integrations
+- ❌ Invite Members
+
+## What Team Members See
+
+Team members only see modules they have access to:
+
+- **Sidebar** - Only shows modules they have permission for
+- **Dashboard Quick Actions** - Only displays actions they can perform
+- **Activity Timeline** - Shows all organization activity (cannot be restricted)
+
+<Tip>
+  Team members can see organization-wide activity in the Dashboard timeline, even for modules they don't have access to. This provides transparency into team activity.
+</Tip>
+
+## Changing Permissions
+
+You can change permissions at any time:
+
+1. Navigate to **Permissions**
+2. Select the team member
+3. Toggle permissions on or off
+4. Save changes
+
+**Changes take effect immediately.** If a team member is currently using the platform, they may need to refresh their browser to see the updated access.
+
+## Removing Team Members
+
+To completely remove a team member's access:
+
+1. Navigate to **Permissions**
+2. Find the team member
+3. Click **"Remove Member"** or **"Revoke All Access"**
+4. Confirm the removal
+
+<Warning>
+  Removing a team member immediately revokes ALL access. They can no longer log in or view any organization data.
+</Warning>
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Can I set different permission levels (view-only, edit, admin)?">
+    Not currently. Permissions are binary: full access or no access per module. More granular permissions may be added in future updates.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can team members see each other's work?">
+    Yes. If two team members both have access to Policies, they can see all policies uploaded by anyone in the organization. Data is organization-wide, not user-specific.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What happens if I revoke a permission while they're using it?">
+    They'll lose access immediately upon the next action. They may need to refresh their browser to see the change reflected in the UI.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I create permission templates or groups?">
+    Not currently. You must configure permissions individually for each team member. We recommend documenting standard permission sets for common roles.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Who can change permissions?">
+    Only team members with access to the Permissions page can change permissions. Typically, this is the organization owner or administrators.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Invite Team Members"
+    icon="user-plus"
+    href="/team/invite-members"
+  >
+    Add colleagues to your organization
+  </Card>
+
+  <Card
+    title="View Dashboard"
+    icon="chart-line"
+    href="/getting-started/dashboard"
+  >
+    Monitor team activity
+  </Card>
+
+  <Card
+    title="Upgrade Plan"
+    icon="arrow-up"
+    href="/billing/plans"
+  >
+    View Team and Enterprise plan details
+  </Card>
+
+  <Card
+    title="Best Practices"
+    icon="lightbulb"
+    href="/support/best-practices"
+  >
+    Learn tips for team management
+  </Card>
+</CardGroup>

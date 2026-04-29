@@ -1,0 +1,217 @@
+---
+title: "Credit Types"
+description: "Understanding the three types of credits in Mulligan"
+---
+
+## Overview
+
+Mulligan has **three types of credits**, each with different rules for expiration, rollover, and priority.
+
+Understanding how each type works helps you manage your credits effectively and avoid surprises.
+
+## The Three Credit Types
+
+<CardGroup cols={3}>
+  <Card
+    title="Monthly Free Credits"
+    icon="gift"
+    color="green"
+  >
+    10 credits/month for everyone
+  </Card>
+
+  <Card
+    title="Monthly Plan Credits"
+    icon="credit-card"
+    color="blue"
+  >
+    30-2,000 credits/month (paid plans)
+  </Card>
+
+  <Card
+    title="Purchased Credits"
+    icon="cart-shopping"
+    color="purple"
+  >
+    $1 each, valid 1 year
+  </Card>
+</CardGroup>
+
+---
+
+## 1. Monthly Free Credits
+
+### What They Are
+
+Everyone gets **10 free credits every month**, regardless of which plan you're on (including Free, Plus, Pro, Team, and Enterprise).
+
+### Key Details
+
+- **Who gets them:** Everyone, on every plan
+- **How many:** 10 credits per month
+- **How they refresh:** At the start of each billing period
+- **Expiration:** End of your billing period
+- **Rollover:** Do NOT roll over - use them or lose them
+- **Priority:** **Used first** (before paid credits)
+
+### Example
+
+You're on the Plus plan (which gives you 30 plan credits + 10 free credits = 40 total):
+
+- **Day 1 of billing period:** You have 40 credits (10 free + 30 Plus)
+- **Throughout the month:** Your first 10 credit-consuming actions use your free credits
+- **Actions 11+:** Start using your Plus plan credits
+- **End of billing period:** Any unused credits expire
+- **Day 1 of next period:** Fresh 10 free credits + 30 Plus credits
+
+---
+
+## 2. Monthly Plan Credits
+
+### What They Are
+
+Credits included with paid subscription plans (Plus, Pro, or Team).
+
+### Key Details
+
+- **Who gets them:** Paid plan subscribers only (Plus, Pro, Team)
+- **How many:**
+  - Plus: 30 credits/month
+  - Pro: 350 credits/month
+  - Team: 2,000 credits/month
+- **How they refresh:** At the start of each billing period
+- **Expiration:** End of your billing period
+- **Rollover:** Do NOT roll over - unused credits expire
+- **Priority:** **Used second** (after free credits are exhausted)
+
+### Total Credits Per Plan
+
+| Plan | Free Credits | Plan Credits | **Total Monthly** |
+|------|--------------|--------------|-------------------|
+| Pay as you Go | 10 | 0 | **10** |
+| Plus | 10 | 30 | **40** |
+| Pro | 10 | 350 | **360** |
+| Team | 10 | 2,000 | **2,010** |
+
+### Example
+
+You're on the Pro plan:
+
+- **Monthly allocation:** 10 free + 350 Pro = **360 total credits**
+- **Usage order:** Free credits used first (credits 1-10), then Pro credits (credits 11-360)
+- **End of month:** Any unused credits expire and don't carry over
+- **Next month:** Fresh 360 credits (10 free + 350 Pro)
+
+<Warning>
+  Plan credits expire at the end of each billing period. If you consistently have credits left over, consider downgrading to save money. If you consistently run out, consider upgrading.
+</Warning>
+
+---
+
+## 3. Purchased Credits
+
+### What They Are
+
+Credits you purchase à la carte for **$1 per credit**. These work with any plan and stack with your monthly allocation.
+
+### Key Details
+
+- **Who can buy them:** Anyone on any plan
+- **Cost:** $1 per credit
+- **How to get them:** One-time purchase via Billing page
+- **Expiration:** Valid for **one year** from purchase date
+- **Rollover:** **YES** - they carry over month-to-month until expiration
+- **Stacking:** Stack with your monthly allocation and work across any plan
+- **Survival:** Remain available if you upgrade, downgrade, or cancel your subscription
+- **Priority:** **Used last** (after both free and plan credits are exhausted)
+
+### Example: Credit Usage Order
+
+You're on the Plus plan and have purchased 50 extra credits. Here's how Mulligan uses your credits:
+
+**Your credit balance:**
+- 10 free monthly credits
+- 30 Plus plan credits
+- 50 purchased credits
+- **Total: 90 credits available**
+
+**Usage order:**
+1. **Credits 1-10:** Your 10 free monthly credits
+2. **Credits 11-40:** Your 30 Plus plan credits
+3. **Credits 41-90:** Your 50 purchased credits
+
+## Quick Reference Table
+
+| Feature | Monthly Free | Monthly Plan | Purchased |
+|---------|--------------|--------------|-----------|
+| **Amount** | 10/month | 30-2,000/month | $1 each |
+| **Who** | Everyone | Paid plans only | Anyone |
+| **Expiration** | End of billing period | End of billing period | 1 year from purchase |
+| **Rollover** | No | No | Yes |
+| **Priority** | 1st (used first) | 2nd | 3rd (used last) |
+| **Survives plan changes** | N/A | N/A | Yes |
+| **Cost** | Free | Included in plan | $1 per credit |
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Do unused monthly credits roll over?">
+    No. Both free monthly credits (10) and plan credits (30/350/2,000) expire at the end of each billing period. Only purchased credits roll over.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What happens to purchased credits if I cancel my subscription?">
+    They remain in your account and are still usable for one year from purchase. You'll still have access to them even on the free Pay as you Go plan.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I buy credits in bulk?">
+    Yes. There's no limit to how many purchased credits you can buy at once. They're all valid for one year from the purchase date.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="If I upgrade mid-month, do I keep my unused credits?">
+    When you upgrade, you immediately receive the new plan's full monthly allocation. Your previous monthly plan credits don't carry forward, but any purchased credits remain available.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="How do I know which type of credit I'm using?">
+    You don't need to track this manually. Mulligan automatically uses credits in priority order: free → plan → purchased. Check your Balance Display to see your total remaining credits.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="View Plans"
+    icon="list"
+    href="/billing/plans"
+  >
+    Compare subscription plans and pricing
+  </Card>
+
+  <Card
+    title="Purchase Credits"
+    icon="cart-shopping"
+    href="/billing/purchasing"
+  >
+    Buy additional credits or upgrade
+  </Card>
+
+  <Card
+    title="Plan Changes"
+    icon="arrows-up-down"
+    href="/billing/plan-changes"
+  >
+    Learn about upgrades and downgrades
+  </Card>
+
+  <Card
+    title="Billing FAQ"
+    icon="circle-question"
+    href="/billing/faq"
+  >
+    More billing questions answered
+  </Card>
+</CardGroup>

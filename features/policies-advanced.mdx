@@ -1,0 +1,492 @@
+---
+title: "Advanced Policy Tools"
+description: "Powerful comparison tools including Quick Comparison, Wedge Finder, and Proposal Generation"
+---
+
+## Overview
+
+Once you've uploaded policies, Mulligan provides powerful AI-driven tools to compare and analyze them. Access these features from the **Insurance Comparison** page at the top of the policy interface.
+
+## Available Tools
+
+<CardGroup cols={2}>
+  <Card
+    title="Quick Comparison"
+    icon="bolt"
+    href="#quick-comparison"
+  >
+    Instant side-by-side comparison of policy coverage
+  </Card>
+
+  <Card
+    title="Export to Excel"
+    icon="file-excel"
+    href="#export-to-excel"
+  >
+    Download comparison results for offline analysis
+  </Card>
+
+  <Card
+    title="Unite Similar Items"
+    icon="layer-group"
+    href="#unite-similar-items"
+  >
+    Group equivalent coverage items across carriers
+  </Card>
+
+  <Card
+    title="Wedge Finder"
+    icon="magnifying-glass-chart"
+    href="#wedge-finder"
+  >
+    Identify coverage gaps and competitive advantages
+  </Card>
+
+  <Card
+    title="Generate Proposal"
+    icon="file-contract"
+    href="#generate-proposal"
+  >
+    Create professional, client-ready proposal documents
+  </Card>
+
+  <Card
+    title="Chat with Policies"
+    icon="comments"
+    href="#chat-with-policies"
+  >
+    Ask questions across multiple policies at once
+  </Card>
+</CardGroup>
+
+---
+
+## Quick Comparison
+
+### What It Does
+
+Provides an instant, AI-powered side-by-side comparison of selected policies based on criteria you care about most.
+
+### How to Use It
+
+<Steps>
+<Step title="Select policies">
+  Choose **2 or more policies** from your uploaded policies list.
+</Step>
+
+<Step title="Click 'Quick Comparison'">
+  Launch the comparison tool.
+</Step>
+
+<Step title="Review the results">
+  The AI automatically extracts and compares:
+  - Coverage limits
+  - Deductibles
+  - Premiums/pricing
+  - Policy forms and endorsements
+  - Exclusions
+  - Key terms and conditions
+</Step>
+
+<Step title="Analyze differences">
+  View results in a structured table format with differences highlighted.
+</Step>
+</Steps>
+
+### What You'll See
+
+- **Side-by-side breakdown** of each policy
+- **Color-coded highlights** showing differences
+- **Clear identification** of which policy offers better coverage for each criterion
+- **Coverage amounts** displayed with variances
+
+### Best For
+
+- Quick client meetings where you need to show differences between incumbent and competitor policies
+- Evaluating multiple carrier quotes
+- Identifying which policy offers better coverage at a glance
+
+---
+
+## Export to Excel
+
+### What It Does
+
+Downloads your policy comparison as an Excel spreadsheet for offline analysis, sharing with clients, or integration into your own reporting systems.
+
+### Best For
+
+- Creating reports for clients
+- Sharing analysis with team members
+- Building presentations
+- Keeping records for compliance purposes
+- Further analysis in Excel with custom formulas
+
+---
+
+## Unite Similar Items
+
+### What It Does
+
+Automatically identifies and groups similar coverage items across different policies, even when they're named differently or structured differently by various carriers.
+
+### Why It's Useful
+
+Different carriers use different terminology and structure their policies differently. One carrier might call it "General Aggregate" while another says "Aggregate Limit." Unite Similar Items uses AI to recognize these are the same coverage and group them together.
+
+### How to Use It
+
+<Steps>
+<Step title="Select multiple policies to compare">
+  Works best with 2-4 policies from different carriers.
+</Step>
+
+<Step title="Click 'Unite Similar Items'">
+  Launch the unification process.
+</Step>
+
+<Step title="Review unified comparison">
+  The AI scans all policies and:
+  - Identifies equivalent coverage items across policies
+  - Groups them together in the comparison table
+  - Normalizes terminology for easier understanding
+  - Aligns similar exclusions and endorsements
+</Step>
+
+<Step title="View original names">
+  Click the dropdown icon next to unified names to see the original names that were merged.
+</Step>
+
+<Step title="Toggle between views">
+  Click "Unite Similar Items" again to toggle back to the original (non-unified) comparison.
+</Step>
+</Steps>
+
+### Example Transformations
+
+- **"Bodily Injury Liability" + "BI Coverage" + "Bodily Injury"** → Grouped as **"Bodily Injury Liability"**
+- **"Property Damage" + "PD Limit"** → Grouped as **"Property Damage Coverage"**
+- **"General Aggregate Limit" + "Aggregate"** → Grouped as **"General Aggregate"**
+
+<Tip>
+  Always use Unite Similar Items before presenting comparisons to clients. It makes the comparison much easier to understand.
+</Tip>
+
+### Best For
+
+- Comparing policies from different carriers where terminology varies
+- Ensuring apples-to-apples comparisons
+- Making client presentations clearer and more professional
+
+---
+
+## Wedge Finder
+
+### What It Does
+
+Identifies coverage gaps, competitive advantages, and opportunities where one policy provides better protection than another - these are called "wedges."
+
+### Why It Matters
+
+**Wedges are your selling points.** They show clients where their current policy falls short and why switching carriers (or adding coverage) makes sense. This tool automatically finds these opportunities.
+
+### How to Use It
+
+<Steps>
+<Step title="Select policies to compare">
+  Typically compare incumbent vs. proposed/renewal policies.
+</Step>
+
+<Step title="Click 'Wedge Finder'">
+  Launch the wedge analysis.
+</Step>
+
+<Step title="Review identified wedges">
+  The AI analyzes both policies and identifies:
+  - **Coverage gaps** - Where one policy lacks coverage the other provides
+  - **Limit differences** - Where coverage amounts vary (higher or lower)
+  - **Exclusion mismatches** - Where one policy has fewer exclusions
+  - **Additional benefits** - Extra features or services in one policy
+  - **Cost differences** - Premium variances relative to coverage changes
+</Step>
+
+<Step title="Prioritize wedges">
+  View results organized by wedge type and importance (High, Medium, Low priority).
+</Step>
+</Steps>
+
+### What You'll See
+
+Each wedge is displayed as a **wedge card** containing:
+
+- **Impact rating** - High, Medium, or Low priority
+- **Description** - What the wedge is and why it matters
+- **Recommendation** - Suggested talking points for client conversations
+- **Dollar impact** - If quantifiable (e.g., $1M higher aggregate limit)
+
+### Example Wedges Found
+
+<AccordionGroup>
+  <Accordion icon="triangle-exclamation" title="HIGH PRIORITY: Cyber Coverage Gap">
+    **Wedge:** Proposed policy includes Cyber Liability coverage ($1M limit) while incumbent has no cyber coverage.
+
+    **Why it matters:** Without cyber coverage, client is exposed to data breach costs, business interruption, and regulatory fines.
+
+    **Talking point:** "Your current policy doesn't include cyber coverage. With the increasing risk of data breaches, this $1M cyber liability coverage in the new policy protects you from potentially devastating financial losses."
+  </Accordion>
+
+  <Accordion icon="circle-exclamation" title="MEDIUM PRIORITY: Lower Deductible">
+    **Wedge:** Proposed policy has lower Professional Liability deductible ($5K vs. $10K).
+
+    **Why it matters:** Lower out-of-pocket costs for each claim.
+
+    **Talking point:** "The new policy cuts your deductible in half, from $10,000 to $5,000, reducing your out-of-pocket expense for each claim."
+  </Accordion>
+
+  <Accordion icon="triangle-exclamation" title="HIGH PRIORITY: Terrorism Coverage">
+    **Wedge:** Incumbent policy excludes terrorism, proposed includes it at no additional cost.
+
+    **Why it matters:** Terrorism exclusions leave clients unprotected for covered losses caused by terrorism acts.
+
+    **Talking point:** "Your current policy excludes terrorism coverage. The new policy includes it at no extra cost, providing crucial protection in today's environment."
+  </Accordion>
+</AccordionGroup>
+
+### Best For
+
+- Client presentations and renewal negotiations
+- Demonstrating value of carrier changes
+- Identifying cross-sell opportunities
+- Building compelling proposals
+
+---
+
+## Generate Proposal
+
+### What It Does
+
+Creates a professional, client-ready proposal document from your policy comparison, complete with wedge analysis, coverage breakdowns, and recommendations.
+
+### How to Use It
+
+<Steps>
+<Step title="Complete your policy comparison">
+  Upload and select policies you want to analyze (typically incumbent vs. proposed).
+</Step>
+
+<Step title="Click 'Generate Proposal'">
+  Launch the proposal generation workflow.
+</Step>
+
+<Step title="Choose proposal options">
+  **Add custom notes:** Include personalized recommendations or context
+
+  **Branding:**
+  - **Default template** - Use Mulligan's standard proposal template
+  - **Custom template** - Upload a sample proposal with your business icons, logo, and layout to generate a custom template for future use
+</Step>
+
+<Step title="Click 'Generate'">
+  AI creates a formatted proposal document based on your selections.
+</Step>
+
+<Step title="Review and download">
+  Review the generated proposal, make any edits, and download as PDF. You can always revisit it later.
+</Step>
+</Steps>
+
+### Customization Options
+
+Once generated, you can:
+
+- **Add/remove sections** - Include only relevant information
+- **Edit AI-generated text** - Customize language and tone
+- **Include/exclude specific coverage items** - Focus on what matters most
+- **Adjust branding and styling** - Enterprise feature for full customization
+- **Add custom disclaimers** - Include legal language or terms
+
+### Creating Custom Templates
+
+<Steps>
+<Step title="Upload a sample proposal">
+  Provide a PDF of your existing proposal format with your logo, colors, and layout.
+</Step>
+
+<Step title="AI analyzes your styling">
+  Mulligan extracts:
+  - Logo and brand elements
+  - Color scheme
+  - Layout structure
+  - Font choices
+  - Section organization
+</Step>
+
+<Step title="Save as template">
+  Your custom template is saved for all future proposal generation.
+</Step>
+
+<Step title="Generate future proposals">
+  All new proposals automatically use your custom styling and branding.
+</Step>
+</Steps>
+
+<Tip>
+  Create custom templates once and reuse them for all clients, saving hours of formatting time.
+</Tip>
+
+### Best For
+
+- Client meetings and presentations
+- Renewal presentations
+- New business pitches
+- Email follow-ups
+- Creating documentation for proposals that need formal review
+
+---
+
+## Chat with Policies
+
+### What It Does
+
+In addition to structured comparison tools, you can have natural conversations with multiple policies at once, asking questions across all selected policies simultaneously.
+
+### How to Use Policy Chat
+
+<Steps>
+<Step title="Select policies">
+  Choose **one or more policies** from your uploaded list.
+</Step>
+
+<Step title="Click 'Chat with the Policies'">
+  Expand the chat section (collapsible panel).
+</Step>
+
+<Step title="Ask questions in plain English">
+  Examples:
+
+  - "What is the general liability limit in the Travelers policy?"
+  - "Are cyber incidents covered under any of these policies?"
+  - "Compare the deductibles for property damage across all three policies"
+  - "List all exclusions in the CNA policy"
+  - "What's the aggregate limit for the current policy vs. the renewal?"
+</Step>
+
+<Step title="Review AI answers">
+  Receive AI-powered answers with:
+  - Direct excerpts from the policies
+  - Page number references
+  - Comparisons when multiple policies are selected
+  - Plain-language explanations of complex terms
+</Step>
+</Steps>
+
+<Warning>
+  Policy Chat is currently unavailable for combined policy types. For combined policies, select individual policy types first to use this feature.
+</Warning>
+
+### Best For
+
+- Quick fact-checking during client calls
+- Finding specific coverage details without reading entire policies
+- Preparing for meetings
+- Answering ad-hoc client questions
+
+---
+
+## Best Practices for Policy Comparison
+
+<AccordionGroup>
+  <Accordion icon="tag" title="Use consistent naming">
+    Name files clearly (e.g., "ABC_Company_GL_2024_Travelers.pdf") for easy identification.
+  </Accordion>
+
+  <Accordion icon="file-check" title="Upload complete policies">
+    Include all pages, endorsements, and schedules for accurate comparisons.
+  </Accordion>
+
+  <Accordion icon="folder-tree" title="Organize properly">
+    Correct carrier/client/type selection helps with searching and comparisons.
+  </Accordion>
+
+  <Accordion icon="code-compare" title="Compare similar policies">
+    Compare GL to GL, WC to WC - not mixed coverage types for best results.
+  </Accordion>
+
+  <Accordion icon="layer-group" title="Use Unite Similar Items first">
+    Before manual analysis, let AI normalize terminology. Then toggle to see what it combined.
+  </Accordion>
+
+  <Accordion icon="magnifying-glass-chart" title="Run Wedge Finder before meetings">
+    Know your talking points in advance for more confident client presentations.
+  </Accordion>
+
+  <Accordion icon="file-contract" title="Create custom templates">
+    Upload a sample proposal once to ensure all future proposals match your branding.
+  </Accordion>
+
+  <Accordion icon="file-excel" title="Export to Excel for complex analysis">
+    Use spreadsheets when you need to manipulate data further or create custom reports.
+  </Accordion>
+
+  <Accordion icon="comments" title="Ask specific questions in Chat">
+    Detailed, specific questions yield better answers than vague queries.
+  </Accordion>
+
+  <Accordion icon="clock" title="Keep policies updated">
+    Re-upload when endorsements or amendments are issued to maintain accuracy.
+  </Accordion>
+</AccordionGroup>
+
+## Limits and Recommendations
+
+- **Number of policies to compare:** No hard limit, but we recommend **no more than 4 at a time** for best readability
+- **File format:** Only PDFs are accepted
+- **Combined policies:** Policy Chat is not available for combined policy types - select individual policy types instead
+- **Processing time:** Large policies (100+ pages) may take 5-10 minutes to process fully
+- **Accuracy:** AI extraction is highly accurate, but **always review critical details manually** before sending to clients
+
+## Credit Usage
+
+Credits are only consumed when a policy is successfully processed.
+
+<Note>
+  Using advanced policy tools does not consume any credits.
+</Note>
+
+Learn more about [credit costs](/billing/overview).
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Upload More Policies"
+    icon="upload"
+    href="/features/policies-overview"
+  >
+    Return to policy upload and organization
+  </Card>
+
+  <Card
+    title="Generate Quotes"
+    icon="calculator"
+    href="/features/quoting"
+  >
+    Request new quotes to compare against incumbent policies
+  </Card>
+
+  <Card
+    title="Track Commissions"
+    icon="chart-line"
+    href="/features/commissions"
+  >
+    Monitor commission statements for bound policies
+  </Card>
+
+  <Card
+    title="Best Practices"
+    icon="lightbulb"
+    href="/support/best-practices"
+  >
+    Learn more tips for policy management
+  </Card>
+</CardGroup>

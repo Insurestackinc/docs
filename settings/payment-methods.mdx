@@ -1,0 +1,154 @@
+---
+title: "Payment Methods"
+description: "Manage billing and payment information"
+---
+
+## Overview
+
+Mulligan uses **Stripe** for secure payment processing. All payment data is handled by Stripe - Mulligan never stores your full card details.
+
+## Managing Payment Methods
+
+<CardGroup cols={2}>
+  <Card icon="credit-card" title="Add Payment Method">
+    Add credit/debit cards securely through Stripe
+  </Card>
+  <Card icon="star" title="Set Default">
+    Choose which card to use for automatic billing
+  </Card>
+  <Card icon="pen" title="Update Details">
+    Change expiration dates or billing addresses
+  </Card>
+  <Card icon="trash" title="Remove Methods">
+    Delete old or expired payment methods
+  </Card>
+</CardGroup>
+
+## Adding a Payment Method
+
+<Steps>
+<Step title="Navigate to Settings → Billing">
+</Step>
+
+<Step title="Click 'Add Payment Method'">
+</Step>
+
+<Step title="Enter payment details">
+</Step>
+
+<Step title="Save payment method">
+</Step>
+</Steps>
+
+<Note>
+  All payment information is processed and stored by Stripe, not Mulligan. Your card details are encrypted and PCI-compliant.
+</Note>
+
+## Setting a Default Payment Method
+
+If you have multiple payment methods:
+
+1. Navigate to **Settings → Billing**
+2. View your list of payment methods
+3. Click **"Set as Default"** next to your preferred card
+4. Future charges will use this card automatically
+
+<Tip>
+  If you only have one payment method, it's automatically the default.
+</Tip>
+
+## Updating Payment Information
+
+To update an existing payment method:
+
+1. Navigate to **Settings → Billing**
+2. Find the payment method
+3. Click **"Edit"**
+4. Update details (expiration date, billing address, etc.)
+5. Save changes
+
+<Note>
+  You cannot change a card number. To use a different card, add a new payment method and remove the old one.
+</Note>
+
+## Billing Cycle & Charges
+
+### When You're Charged
+
+- **Subscription plans** - Charged monthly on your billing date
+- **Credit purchases** - Charged immediately upon purchase
+- **Plan upgrades** - Charged immediately, billing cycle reset to date of upgrade
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Can I use PayPal or other payment methods?">
+    Currently, only credit/debit cards are supported for Pay as you Go, Plus, Pro, and Team plans.
+
+    Enterprise plans can use ACH, wire transfers, or invoicing upon request.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Are there any fees or markups?">
+    No. You pay exactly what's listed in our pricing. Mulligan does not charge any additional processing fees.
+
+    Standard Stripe fees are absorbed by Mulligan - you don't pay them.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I change my billing date?">
+    Your billing date is set when you subscribe or upgrade and cannot be manually changed.
+
+    To change it, you'd need to cancel and re-subscribe on your desired date (not recommended due to potential disruption).
+  </Accordion>
+
+  <Accordion icon="circle-question" title="What happens if my card expires?">
+    Stripe automatically updates some cards when they expire (if your bank supports it). Otherwise:
+    - You'll receive a notification before your card expires
+    - Update your card details in Settings → Billing before the expiration date
+    - If you don't update it, payment will fail and your account may be downgraded
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Can I get a refund?">
+    Refunds are handled on a case-by-case basis. Contact support if you believe you're entitled to a refund.
+
+    Generally:
+    - No refunds for unused monthly credits (they expire)
+    - No refunds for purchased credits (valid 1 year)
+    - No prorated refunds for downgrades (you get full access until period end)
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="View Billing"
+    icon="file-invoice-dollar"
+    href="/billing/overview"
+  >
+    Check your credit balance and billing details
+  </Card>
+
+  <Card
+    title="View Plans"
+    icon="list"
+    href="/billing/plans"
+  >
+    Compare subscription plans and upgrade
+  </Card>
+
+  <Card
+    title="Purchase Credits"
+    icon="cart-shopping"
+    href="/billing/purchasing"
+  >
+    Buy additional credits for your organization
+  </Card>
+
+  <Card
+    title="Account Settings"
+    icon="user"
+    href="/settings/account"
+  >
+    Manage your personal account details
+  </Card>
+</CardGroup>

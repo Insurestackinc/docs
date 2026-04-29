@@ -1,0 +1,176 @@
+---
+title: "Dashboard"
+description: "Your command center for monitoring activity and accessing features"
+---
+
+## Overview
+
+The **Dashboard** is your command center and landing page after login. It provides a comprehensive view of your platform activity with three main sections:
+
+1. **Quick Action Cards** (top row) - Direct shortcuts to start using features
+2. **Usage Statistics Cards** (middle row) - Your current month's activity metrics
+3. **Recent Activity Timeline** (bottom section) - Chronological log of recent actions
+
+At the top of the dashboard, you'll also see:
+- **Plan name** - Displays which plan your organization is currently on
+- **Credit balance indicator** - Shows your remaining credits with a refresh icon to get the latest amount
+- **Purchase button** - "Buy Additional Credits" and "Upgrade Now" take you to the billing page
+
+## Quick Action Cards
+
+The top row features **four large action buttons** that instantly launch key workflows:
+
+<CardGroup cols={2}>
+  <Card
+    title="Submissions"
+    icon="file-lines"
+    color="orange"
+  >
+    **Manage submission documents**
+
+    Opens the Submissions module to create and track insurance submission packages.
+  </Card>
+
+  <Card
+    title="Generate Quote"
+    icon="calculator"
+    color="green"
+  >
+    **Create new insurance quotes**
+
+    Starts a new quoting workflow to request quotes from carriers.
+  </Card>
+
+  <Card
+    title="Check Policies"
+    icon="shield-check"
+    color="blue"
+  >
+    **Upload and compare policies**
+
+    Opens the policy upload interface for analysis and comparison.
+  </Card>
+
+  <Card
+    title="Track Commissions"
+    icon="chart-line"
+    color="purple"
+  >
+    **Upload commission statements**
+
+    Opens the commission upload page for automated data extraction.
+  </Card>
+</CardGroup>
+
+<Tip>
+  These cards are always visible regardless of scroll position, allowing you to jump into any workflow quickly.
+</Tip>
+
+## Usage Statistics Cards
+
+Below the quick actions, you'll find **four statistics cards** showing your activity for the current month.
+
+### Understanding the Metrics
+
+Each card displays:
+- **Count** - Number of items processed this month
+- **Percentage change** - Compared to previous month (0% means no prior month data)
+
+<Note>
+  A run is marked as **"processed"** if it has reached a final state of **'succeeded'**, **'failed'**, or **'declined'**.
+
+  Statistics reset monthly and reflect your current billing period only.
+</Note>
+
+## Recent Activity Timeline
+
+The bottom section displays your **10 most recent actions** across all modules. These are sorted chronologically (newest first) and they update automatically.
+
+### Activity Entry Details
+
+Each activity shows:
+- **Activity icon** - Small document/policy icon indicating the module
+- **Status badge** - Visual indicator of completion state
+- **Activity description** - Two-line summary:
+  - First line: Action type (e.g., "Policy processed successfully")
+  - Second line: Details like policy name, client, carrier, and year
+- **Timestamp** - How long ago the action occurred (e.g., "14d ago")
+
+### Example Activity
+```
+✓ Completed
+Policy processed successfully
+Business Auto policy for JOHN DOE TRUCKING LLC - The Carrier (2025)
+14d ago
+```
+
+## Credit Balance Display
+
+At the top of the dashboard, you'll see your current credit balance:
+
+### What's Displayed
+
+- **Remaining credits** - Your current available balance
+- **Plan name** - Which subscription you're on
+- **Refresh icon** - Click to get real-time credit count
+- **Purchase buttons** - Quick access to buy credits or upgrade
+
+### Taking Action
+
+<CardGroup cols={2}>
+  <Card
+    title="Buy Credits"
+    icon="cart-shopping"
+    href="/billing/purchasing"
+  >
+    Purchase additional credits at $1 each
+  </Card>
+
+  <Card
+    title="Upgrade Plan"
+    icon="arrow-up"
+    href="/billing/plans"
+  >
+    View plans and upgrade for more monthly credits
+  </Card>
+</CardGroup>
+
+<Warning>
+  When you run out of credits, action buttons will be disabled until you purchase more credits or wait for your monthly reset.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Try a Feature"
+    icon="rocket"
+    href="/features/submissions"
+  >
+    Start with Submissions, Quoting, or Policy Checking
+  </Card>
+
+  <Card
+    title="Understand Credits"
+    icon="coins"
+    href="/billing/overview"
+  >
+    Learn how the credit system works
+  </Card>
+
+  <Card
+    title="Invite Team"
+    icon="users"
+    href="/team/invite-members"
+  >
+    Add colleagues (Team Plan required)
+  </Card>
+
+  <Card
+    title="Configure Settings"
+    icon="gear"
+    href="/settings/account"
+  >
+    Update your account and organization settings
+  </Card>
+</CardGroup>

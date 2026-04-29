@@ -1,0 +1,232 @@
+---
+title: "Billing Overview"
+description: "Understand how Mulligan's credit-based pricing system works"
+---
+
+## How Pricing Works in Mulligan
+
+Mulligan operates on a **credit-based system**. Every action you take (quotes, submissions, proposals, policy checks, or commissions) costs **a certain amount of credits**.
+
+### Core Principles
+
+- **Everyone starts with 10 free monthly credits** on the 'Pay as you Go' plan - no credit card required
+- **Every action consumes credits** based on its type
+- **Two ways to get more credits**:
+  1. **Upgrade to a paid plan** for higher monthly credit allocations
+  2. **Purchase additional credits for $1 each** that work with any plan
+
+<CardGroup cols={2}>
+  <Card
+    title="View Plans"
+    icon="credit-card"
+    href="/billing/plans"
+  >
+    Compare subscription plans and pricing
+  </Card>
+
+  <Card
+    title="Buy Credits"
+    icon="cart-shopping"
+    href="/billing/purchasing"
+  >
+    Purchase additional credits
+  </Card>
+
+  <Card
+    title="Credit Types"
+    icon="layer-group"
+    href="/billing/credit-types"
+  >
+    Understand the 3 types of credits
+  </Card>
+
+  <Card
+    title="Billing FAQ"
+    icon="circle-question"
+    href="/billing/faq"
+  >
+    Common billing questions answered
+  </Card>
+</CardGroup>
+
+## When Are Credits Consumed?
+
+<Note>
+  **Important:** Credits are deducted **only when a run reaches a final state** of 'succeeded', 'failed', or 'declined'.
+</Note>
+
+### What This Means
+
+- **Succeeded** - Task completed successfully ✅ Credits consumed
+- **Failed** - Task encountered an error ✅ Credits consumed
+- **Declined** - Carrier declined the request ✅ Credits consumed
+- **Processing/Running** - Task still in progress ❌ No credits consumed yet
+- **Terminated mid-process** - Task stopped before completion ❌ No credits consumed
+
+### Why This Model?
+
+We only charge for completed processes (even if declined or failed) because:
+- The system did the work to reach a final determination
+- Failed/declined states indicate either carrier appetite issues or missing information
+- We absorb the cost of mid-process terminations to be fair to users
+
+<Tip>
+  If a quote or submission fails repeatedly, review your input data for completeness before retrying to avoid consuming more credits.
+</Tip>
+
+## Viewing Your Credit Balance
+
+### UsageTrackingBar (Top of Screen)
+
+A sticky bar at the top of every page shows:
+- **Total remaining credits** for the current period
+- **Refresh button** - Click to get the latest credit count in real-time
+- **Expandable details** - Click the dropdown to see credit costs and possible runs available for each module
+
+
+### Balance Display (Settings/Billing Page)
+
+For detailed credit information:
+1. Go to **Settings** → **Billing**
+2. View the Balance Display widget showing total remaining credits
+3. Click **"Refresh"** to update in real-time
+
+## What Happens When You Run Out of Credits?
+
+When you attempt to use a feature without sufficient credits:
+
+1. The action button shows a **disabled appearance** (grayed out, lower opacity)
+2. You **cannot use the platform** until you:
+   - Purchase additional credits ($1 each)
+   - Upgrade to a higher plan with more monthly credits
+   - Wait for credits to refresh at the start of the new billing cycle
+
+<Warning>
+  Plan ahead! If you're running low on credits mid-month, consider purchasing additional credits or upgrading your plan to avoid disruption.
+</Warning>
+
+## Credit System Architecture
+
+Mulligan uses **Metronome** for usage-based tracking. Credits are utilized based on priority:
+
+### Usage Priority Order
+
+1. **First:** Monthly Free Credits (10 credits)
+2. **Second:** Monthly Plan Credits (30, 350, or 2,000 depending on plan)
+3. **Third:** Purchased Credits (valid for 1 year)
+
+This is automatically handled by the system - you don't need to manually choose which credits to use.
+
+## Cost Per Module
+
+Different modules consume different amounts of credits:
+
+### Typical Credit Costs
+
+<Note>
+  Exact costs are displayed in the expanded UsageTrackingBar. Click the bar to see current credit costs for each module.
+</Note>
+
+Module costs vary based on:
+- **Complexity** - More complex operations cost more credits
+- **Processing time** - Longer-running tasks may cost more
+- **Data volume** - Larger documents or more policies may increase costs
+- **Carrier** - Some carriers require more complex form filling
+
+<Tip>
+  To see exact credit costs for your current plan, click the UsageTrackingBar at the top of any page.
+</Tip>
+
+## Best Practices for Managing Credits
+
+<AccordionGroup>
+  <Accordion icon="chart-line" title="Monitor your balance regularly">
+    Check the UsageTrackingBar frequently to avoid surprises. Enable the refresh button for real-time updates.
+  </Accordion>
+
+  <Accordion icon="calendar-days" title="Plan ahead">
+    If you have a busy month coming up (renewals, new business push), purchase extra credits in advance or upgrade your plan.
+  </Accordion>
+
+  <Accordion icon="scale-balanced" title="Consider your usage patterns">
+    - **Occasional spikes?** Buy extra credits as needed
+    - **Consistently high usage?** Upgrade to a higher plan for better value
+  </Accordion>
+
+  <Accordion icon="bell" title="Set reminders">
+    Note when your billing period resets so you don't waste unused monthly credits.
+  </Accordion>
+
+  <Accordion icon="magnifying-glass-chart" title="Track what costs the most">
+    Review the Activity Timeline on the Dashboard to see which actions consume the most credits.
+  </Accordion>
+
+  <Accordion icon="infinity" title="Enterprise for unlimited">
+    If you're constantly buying credits, Enterprise may be more cost-effective with unlimited usage.
+  </Accordion>
+</AccordionGroup>
+
+## Quick Reference
+
+### Credit Types at a Glance
+
+| Credit Type | Amount | Expiration | Rollover | Priority |
+|-------------|--------|------------|----------|----------|
+| **Monthly Free** | 10/month | End of billing period | No | 1st (used first) |
+| **Monthly Plan** | 30-2,000/month | End of billing period | No | 2nd |
+| **Purchased** | $1 each | 1 year from purchase | Yes | 3rd (used last) |
+
+### Plans at a Glance
+
+| Plan | Total Monthly Credits | Price | Users |
+|------|----------------------|-------|-------|
+| **Pay as you Go** | 10 free | Free | 1 |
+| **Plus** | 40 (10 free + 30 paid) | $20/month | 1 |
+| **Pro** | 360 (10 free + 350 paid) | $200/month | 1 |
+| **Team** | 2,010 (10 free + 2,000 paid) | $999/month | Multiple |
+| **Enterprise** | Unlimited | Custom | Unlimited |
+
+<Card
+  title="View Detailed Plans"
+  icon="credit-card"
+  href="/billing/plans"
+  horizontal
+>
+  See full plan comparison and features
+</Card>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Understand Credit Types"
+    icon="layer-group"
+    href="/billing/credit-types"
+  >
+    Learn about the 3 types of credits in detail
+  </Card>
+
+  <Card
+    title="View Plans"
+    icon="list"
+    href="/billing/plans"
+  >
+    Compare subscription plans
+  </Card>
+
+  <Card
+    title="Purchase Credits"
+    icon="cart-shopping"
+    href="/billing/purchasing"
+  >
+    Buy additional credits or upgrade
+  </Card>
+
+  <Card
+    title="Billing FAQ"
+    icon="circle-question"
+    href="/billing/faq"
+  >
+    Get answers to common billing questions
+  </Card>
+</CardGroup>

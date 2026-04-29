@@ -1,0 +1,181 @@
+---
+title: "Organization Settings"
+description: "Manage organization-level settings and information"
+---
+
+## Overview
+
+Organization settings apply to your entire organization, not just your individual account. Changes here affect all team members.
+
+## Organization Information
+
+View and update your organization details:
+
+<CardGroup cols={2}>
+  <Card icon="building" title="Organization Name">
+    Your company or brokerage name
+  </Card>
+  <Card icon="fingerprint" title="Organization ID">
+    Unique identifier for support requests
+  </Card>
+  <Card icon="users" title="Team Member Count">
+    Number of users in your organization
+  </Card>
+  <Card icon="plug" title="Active Integrations">
+    Connected systems (Enterprise only)
+  </Card>
+</CardGroup>
+
+## Updating Organization Name
+
+<Steps>
+<Step title="Navigate to Settings → Organization">
+  Access organization settings.
+</Step>
+
+<Step title="Click 'Edit Organization Name'">
+  Open the name update form.
+</Step>
+
+<Step title="Enter new name">
+  Provide your updated organization name.
+</Step>
+
+<Step title="Save changes">
+  The new name appears in the sidebar and throughout the platform.
+</Step>
+</Steps>
+
+<Note>
+  Changing your organization name does not affect your billing, data, or organization ID.
+</Note>
+
+## Organization ID
+
+Your **Organization ID** is a unique identifier used for:
+- Support ticket references
+- API authentication (Enterprise only)
+- Billing inquiries
+- Integration setup
+
+<Tip>
+  Keep your Organization ID handy when contacting support. It helps us quickly locate your account.
+</Tip>
+
+## Team Overview
+
+View information about your team:
+
+- **Total team members** - Number of users in your organization
+- **Active members** - Members who have logged in recently
+- **Pending invitations** - Invites sent but not yet accepted
+
+<Card
+  title="Manage Team Members"
+  icon="users-gear"
+  href="/team/invite-members"
+  horizontal
+>
+  Invite new members or manage permissions
+</Card>
+
+## Integrations
+
+For Enterprise customers:
+
+- **View active integrations** - See connected systems
+- **Manage API keys** - Rotate or revoke API access
+- **Configure webhooks** - Set up event notifications
+- **Integration logs** - View recent integration activity
+
+<Note>
+  Integrations are available for Enterprise plans only.
+</Note>
+
+## Organization Limits
+
+Depending on your plan, you may have limits on:
+
+| Limit | Pay as you Go | Plus | Pro | Team | Enterprise |
+|-------|---------------|------|-----|------|------------|
+| **Team Members** | 1 | 1 | 1 | Multiple | Multiple |
+| **Monthly Credits** | 10 free | 40 | 360 | 2,010 | Custom |
+| **Integrations** | 0 | 0 | 0 | 0 | Custom |
+| **API Access** | ❌ | ❌ | ❌ | ❌ | ✅ |
+
+<Card
+  title="Upgrade Your Plan"
+  icon="arrow-up"
+  href="/billing/plans"
+  horizontal
+>
+  View plans to increase your organization's capabilities
+</Card>
+
+## Data & Privacy
+
+<AccordionGroup>
+  <Accordion icon="shield-halved" title="Data Security">
+    All data is encrypted in transit (TLS/SSL) and at rest. Integration credentials are encrypted separately with additional layers of security.
+  </Accordion>
+
+  <Accordion icon="download" title="Data Export">
+    Contact support for data export requests. Enterprise customers can use the API to export data programmatically.
+  </Accordion>
+
+  <Accordion icon="trash" title="Data Deletion">
+    When you delete your organization, all data is permanently deleted within 30 days. This includes:
+    - All uploaded policies
+    - All quotes and submissions
+    - All commission data
+    - All team member accounts
+  </Accordion>
+
+  <Accordion icon="file-contract" title="Data Retention">
+    Active organizations: Data retained indefinitely
+    Canceled subscriptions: Data retained for 90 days, then archived
+    Deleted organizations: Data deleted within 30 days
+  </Accordion>
+</AccordionGroup>
+
+## Deleting Your Organization
+
+To delete your entire organization:
+
+Reach out to support@pyqai.com and we will do it for you.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Account Settings"
+    icon="user"
+    href="/settings/account"
+  >
+    Manage your personal account details
+  </Card>
+
+  <Card
+    title="Payment Methods"
+    icon="credit-card"
+    href="/settings/payment-methods"
+  >
+    Update billing information
+  </Card>
+
+  <Card
+    title="Team Management"
+    icon="users"
+    href="/team/invite-members"
+  >
+    Invite and manage team members
+  </Card>
+
+  <Card
+    title="Billing"
+    icon="file-invoice-dollar"
+    href="/billing/overview"
+  >
+    View subscription and credit details
+  </Card>
+</CardGroup>

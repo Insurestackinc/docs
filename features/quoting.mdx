@@ -1,0 +1,229 @@
+---
+title: "Quoting"
+description: "Automate quote generation across 30+ insurance carriers"
+---
+
+## What is Quoting?
+
+The **Quoting** module is the industry's most comprehensive commercial lines comparative rater. Upload your documents and get quotes across multiple carriers in minutes with zero manual data entry - Mulligan handles the entire workflow automatically.
+
+## Supported Lines of Business
+
+Mulligan integrates with 30+ carriers across:
+
+- **Commercial Auto** - Business vehicle coverage
+- **BOP** (Business Owners' Policy) - Combined property and liability
+- **WC** (Workers' Compensation) - Employee injury coverage
+- **GL** (General Liability) - Business liability protection
+- **Trucking** - Commercial trucking insurance
+- **Professional Liability** - E&O and professional coverage
+
+<Tip>
+  Enterprise clients can request additional carriers to be prioritized for integration.
+</Tip>
+
+## How to Generate Quotes
+
+<Steps>
+<Step title="Upload Any Document">
+
+1. Navigate to **Quoting** from the sidebar
+2. Select **LOB** (Line of Business):
+   - Commercial Auto
+   - BOP (Business Owners' Policy)
+   - WC (Workers' Compensation)
+   - GL (General Liability)
+   - Trucking
+   - Professional Liability
+
+3. Select **Insurance Carrier** for this LOB
+4. **Upload documents** - ACORDs, intake forms, supplementals, or previous policies
+5. **Provide Customer Name**
+6. Click **"Parse Documents"** and wait for AI to extract data
+7. **Verify** how the information was mapped to carrier form fields
+8. Click **"Start Quote"**
+
+<Note>
+  AI automatically scans your documents and extracts information, mapping it to carrier form fields. Review this mapping to ensure accuracy before starting the quote.
+</Note>
+
+</Step>
+
+<Step title="AI Scans & Quotes">
+
+Mulligan automatically processes your quote:
+
+- **Created** - Quote request has been created
+- **Queued** - Waiting to start processing
+- **Running** - AI is filling out carrier forms automatically
+- **Completed** - Quote successfully generated
+
+<Tip>
+  You can navigate away while quotes generate in parallel. Check the Dashboard's Recent Activity to monitor progress.
+</Tip>
+
+</Step>
+
+<Step title="Review & Bind">
+
+Once completed, review quotes in the carrier portal:
+
+- View **premium amounts** and coverage details
+- **Download quote PDFs** directly
+- **Bind and pay** through the carrier portal
+- **Compare quotes** across multiple carriers
+
+</Step>
+</Steps>
+
+## Understanding Quote Statuses
+
+<AccordionGroup>
+  <Accordion icon="spinner" title="Running">
+    AI is automatically filling out the carrier form. This typically takes 3-10 minutes depending on form complexity.
+  </Accordion>
+
+  <Accordion icon="check" title="Completed">
+    Quote successfully generated. Review premium, coverage details, and binding options in the carrier portal. You can download the quote PDF.
+  </Accordion>
+
+  <Accordion icon="ban" title="Declined">
+    Carrier declined to quote based on risk appetite or underwriting guidelines. Check the decline reason and try a different carrier.
+  </Accordion>
+
+  <Accordion icon="xmark" title="Failed">
+    Technical error occurred during quote generation. This could be due to carrier website changes, missing required information, or connectivity issues. Contact support if failures persist.
+  </Accordion>
+</AccordionGroup>
+
+## Viewing Your Quotes
+
+The quote list displays all your quote requests with key details:
+
+### Quote Card Information
+
+Each quote shows:
+
+- **Customer name** - Who the quote is for
+- **Carrier** - Which insurance company
+- **Premium** - Quote amount (displayed when completed)
+- **Status** - Current state (Running, Completed, Declined, Failed)
+- **Created date** - When the quote was requested
+- **LOB** - Line of business
+
+## Tips for Successful Quoting
+
+<AccordionGroup>
+  <Accordion icon="file-check" title="Provide complete information">
+    The more complete your uploaded documents, the better.
+  </Accordion>
+
+  <Accordion icon="eye" title="Verify field mapping">
+    After document parsing, review how information was mapped to carrier fields. Correct any errors before starting the quote.
+  </Accordion>
+
+  <Accordion icon="layer-group" title="Batch multiple quotes">
+    Request quotes from multiple carriers at once to save time. Mulligan processes them in parallel.
+  </Accordion>
+
+  <Accordion icon="building" title="Know carrier appetites">
+    Not all carriers quote all risks. Check carrier guidelines to avoid declined quotes and wasted credits.
+  </Accordion>
+
+  <Accordion icon="file-pdf" title="Keep documents organized">
+    Use clear filenames and organize documents by client and LOB for easier retrieval and reuse.
+  </Accordion>
+</AccordionGroup>
+
+## Common Issues and Solutions
+
+<AccordionGroup>
+  <Accordion icon="circle-question" title="Quote declined - what does this mean?">
+    The carrier has declined to quote based on their underwriting guidelines. Common reasons:
+    - Risk outside carrier's appetite
+    - Missing required information
+    - Loss history exceeds thresholds
+    - Business type not covered
+
+    **Solution:** Review the decline reason, address any issues, and try a different carrier.
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Quote failed - what should I do?">
+    Technical errors can occur due to:
+    - Carrier website changes
+    - Missing critical form fields
+    - Connectivity issues
+
+    **Solution:**
+    1. Review your uploaded documents for completeness
+    2. Retry the quote
+    3. If failures persist, contact support with the quote ID
+  </Accordion>
+
+  <Accordion icon="circle-question" title="Why is my quote taking so long?">
+    Most quotes complete in 5-15 minutes. Longer processing times may indicate:
+    - Complex risk requiring extensive form filling
+    - Carrier website slowness
+    - Additional information required
+
+    **Solution:** Check the Recent Activity on your Dashboard. If status remains "Running" for 30+ minutes, contact support.
+  </Accordion>
+</AccordionGroup>
+
+## Credit Usage
+
+Quote generation consumes credits based on:
+- Carrier selected
+- Line of business
+- Form complexity
+
+<Note>
+  Credits are only consumed when the quote reaches a final state (completed, failed, or declined). Quotes that are terminated mid-process do not consume credits.
+</Note>
+
+Learn more about [credit costs](/billing/overview) and [subscription plans](/billing/plans).
+
+## What Happens After Quoting?
+
+Once you have quotes:
+
+1. **Review in carrier portal** - View premiums, coverage, and terms across all quotes
+2. **Bind and pay directly** - Complete binding and payment through the carrier portal
+3. **Upload bound policy** - After binding, upload the policy to Mulligan for analysis
+4. **Generate proposals** - Use the [Policy Comparison](/features/policies-advanced) tools to create client proposals
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Compare Policies"
+    icon="shield-check"
+    href="/features/policies-overview"
+  >
+    Upload and compare carrier policies
+  </Card>
+
+  <Card
+    title="Create Proposals"
+    icon="file-contract"
+    href="/features/policies-advanced"
+  >
+    Generate professional proposal documents
+  </Card>
+
+  <Card
+    title="Track Commissions"
+    icon="chart-line"
+    href="/features/commissions"
+  >
+    Monitor commission statements after binding
+  </Card>
+
+  <Card
+    title="View Billing"
+    icon="credit-card"
+    href="/billing/overview"
+  >
+    Check your credit usage and balance
+  </Card>
+</CardGroup>
